@@ -1,15 +1,20 @@
 #include <Servo.h>
-Servo myservo;
+Servo myservo1;
+Servo myservo2;
 void setup()
 {
- myservo.attach(9); 
+ myservo1.attach(9); 
+ myservo2.attach(8);
 }
 
 void loop()
 {
-  myservo.write(180);
-  delay(2000); 
-  myservo.write(90);
+myservo1.write(180);
+myservo2.write(180);
+  delay(2000);
+  
+  myservo1.write(90);
+  myservo2.write(90);
   delay(2000); 
   
 }
